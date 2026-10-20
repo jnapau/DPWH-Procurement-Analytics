@@ -6,7 +6,7 @@ Exploratory audit-risk analysis of **9,855 Department of Public Works and Highwa
 
 ---
 
-## 📊 Key Findings
+## Key Findings
 
 | Metric | Value |
 |---|---|
@@ -25,7 +25,7 @@ Exploratory audit-risk analysis of **9,855 Department of Public Works and Highwa
 
 > **Note:** `hasBudgetDiscrepancy` is an **audit-risk indicator** that flags contracts whose awarded cost differs from the ABC. It points to where a closer look is warranted. It is **not** proof of irregularity or corruption.
 
-## 🖼️ Visuals
+## Visuals
 
 | | |
 |---|---|
@@ -34,21 +34,13 @@ Exploratory audit-risk analysis of **9,855 Department of Public Works and Highwa
 
 There is also an interactive Plotly scatter plot of **Project Duration vs. ABC**, colored by discrepancy flag, with hover details for each project, region, and contractor. Open the notebook in Colab to explore it.
 
-## 🛠️ Methodology
+## Methodology
 
 1. **Data**: [DPWH Flood Control Projects – Philippines (Kaggle)](https://www.kaggle.com/datasets/aquilarozeusazores/dpwh-flood-control-projects-philippines), 9,855 rows × 22 columns, loaded with `kagglehub`.
 2. **Cleaning**: dropped `Municipality` (666 missing, can't be imputed); converted ABC and Contract Cost from text to numbers and filled missing values with the median; parsed dates; confirmed there are 0 duplicate rows.
 3. **Feature engineering**: `BudgetDiscrepancy`, `BudgetDiscrepancyPct`, `hasBudgetDiscrepancy`, and `ProjectDuration` (completion date minus start date).
 4. **Analysis**: group-by aggregations of budget and variance rate by year, island, region, and contractor; bar charts in Matplotlib; interactive scatter in Plotly.
 
-## 🚀 Run It
-
-```bash
-pip install -r requirements.txt
-jupyter notebook DPWH_Flood_Control_Analysis.ipynb
-```
-
-Or click the Colab badge above.
 
 ## 👥 Team (Buddy 9)
 
