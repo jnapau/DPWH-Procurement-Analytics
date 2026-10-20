@@ -42,7 +42,7 @@ There is also an interactive Plotly scatter plot of **Project Duration vs. ABC**
 4. **Analysis**: group-by aggregations of budget and variance rate by year, island, region, and contractor; bar charts in Matplotlib; interactive scatter in Plotly.
 
 
-## 👥 Team (Buddy 9)
+## Buddy 9
 
 Joana Paula Acebedo · Jhade Cuizon · Matt Angelo La Rosa · Alezandra Zandy Torres · Gabriel Sjoerd Saratan
 
